@@ -49,7 +49,7 @@ def classify(name: str):
             "probability": probability,
             "sample_size": count,
             "is_confident": is_confident,
-            "processed_at": datetime.now(timezone.utc).isoformat()
+            "processed_at": datetime.now(timezone.wat).isoformat()
         }
     }
 
