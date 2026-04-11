@@ -55,9 +55,8 @@ def classify(name: str):
 
 def get_gender_data(name):
     try:
-        # Get gender data from Genderize API
-        result = Genderize().get([name])
+        result = Genderize().get([name])[0]
         return result
     except Exception:
         return None
-    
+
